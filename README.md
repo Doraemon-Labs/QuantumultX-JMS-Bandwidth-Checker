@@ -1,0 +1,2 @@
+# QuantumultX-JMS-Bandwidth-Checker
+这是一个专为Quantumult X用户设计的JavaScript脚本，使用户能够轻松监控和管理他们在Just My Socks机场上的带宽使用情况。此脚本提供实时带宽消耗数据，帮助用户避免超出其订阅计划的限制，确保网络连接的顺畅。只需简单的设置，即可开始跟踪你的带宽消耗，保持连接不受干扰。
