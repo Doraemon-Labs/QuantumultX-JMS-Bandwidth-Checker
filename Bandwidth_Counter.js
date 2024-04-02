@@ -59,17 +59,9 @@ function handleStandaloneRun(monthly_bw_limit_gb, bw_used_gb) {
     var filled_length = Math.round(bar_length * percentage / 100);
     var bar = '▓'.repeat(filled_length) + '░'.repeat(bar_length - filled_length);
 
-    var message = `Service S-645069\n`;
-    message += `Just My Socks LA 500\n`;
-    message += `500GB/mo on 2.5 Gbps | 5 devices\n\n`;
-    message += `Billing Information\n\n`;
+    var message = `Billing Information\n\n`;
     message += `${bar} ${percentage.toFixed(2)}%\n\n`;
     message += `Monthly data transfer: ${bw_used_gb.toFixed(3)} GB used out of ${monthly_bw_limit_gb.toFixed(0)} GB\n\n`;
-    message += `Counter resets monthly on day 4 – Los Angeles time zone\n\n`;
-    message += `Service created\t\t\t\t2022-12-04\n`;
-    message += `First payment amount\t\t\t$5.57\n`;
-    message += `Recurring amount\t\t\t\t$55.82 Annually\n`;
-    message += `Next renewal date\t\t\t\t2024-07-04`;
 
     console.log(message);
     $done({});
