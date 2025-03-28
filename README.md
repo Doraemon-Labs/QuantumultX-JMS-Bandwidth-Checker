@@ -1,36 +1,40 @@
-# 适用于 QuantumultX 的 Just My Socks 网络流量监控脚本
+# Just My Socks Bandwidth Monitor Script for Quantumult X
 
-这个脚本提供了一种方便的方法来监控你的Just My Socks服务的带宽使用情况。它可以直接在Quantumult X上运行，无论是作为策略组的一部分，还是作为独立脚本运行。
+This script offers a convenient way to monitor your Just My Socks bandwidth usage directly within **Quantumult X**. Whether used as part of a policy group or executed as a standalone script, it provides real-time visibility into your data consumption.
 
-## 功能特性
+## Features
 
-- 实时获取月度带宽限额和已使用带宽
-- 显示剩余带宽和使用比例
-- 适用于Quantumult X的节点菜单或独立运行模式
-- 直观展示带宽使用情况，帮助避免超出限制
+- Fetches real-time monthly bandwidth quota and usage  
+- Displays remaining bandwidth and usage percentage  
+- Supports Quantumult X node menu or standalone mode  
+- Clean and intuitive display to help you avoid hitting your bandwidth cap  
 
-## 如何使用
+## Getting Started
 
-1. **获取你的Just My Socks API URL**：
-   - 登录到Just My Socks官网，找到“API – Bandwidth Counter”部分。
-   - 复制你的个人API URL。
+### 1. Retrieve Your Just My Socks API URL  
+- Log in to your [Just My Socks account](https://justmysocks.net), and locate the **“API – Bandwidth Counter”** section.  
+- Copy your unique API URL.
 
-2. **配置脚本**：
-   - 将复制的API URL粘贴到脚本中`var api_url = "XXXXXX";`的`"XXXXXX"`处。
+### 2. Configure the Script  
+- Replace the placeholder in the script:  
+  ```js
+  var api_url = "XXXXXX"; // <-- Paste your API URL here
+  ```
 
-3. **在Quantumult X中添加脚本**：
-   - 将编辑好的脚本添加到Quantumult X的相关配置部分。
+### 3. Add the Script to Quantumult X  
+- Import the edited script into the relevant configuration section of Quantumult X.
 
-4. **运行脚本**：
-   - 你可以通过Quantumult X的策略组选择此脚本运行，或者直接在Quantumult X中运行此脚本。
+### 4. Run the Script  
+- Either trigger the script via a policy group or run it manually within Quantumult X.
 
-5. **查看带宽使用情况**：
-   - 根据脚本运行的模式，你将在Quantumult X的日志中或通过弹出的HTML消息查看到你的带宽使用情况。
+### 5. View Bandwidth Usage  
+- Depending on how the script is run, your usage stats will appear in the Quantumult X log or as a popup HTML notification.
 
-## 安全提示
+## Security Notice
 
-请确保不要公开或分享你的Just My Socks API URL，它包含了敏感信息。如果你认为API URL已经泄露，请立即更改你的Just My Socks服务密码以重置你的UUID。
+**Never share your Just My Socks API URL.** It contains sensitive credentials that grant access to your account’s usage data. If you suspect your API URL has been exposed, change your account password immediately to regenerate the token.
 
-## 版权信息
+## License
 
-此脚本根据Apache License 2.0发布。欢迎贡献代码和反馈意见。
+This project is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).  
+Feel free to fork, contribute, and open issues or PRs!
