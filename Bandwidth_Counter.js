@@ -1,4 +1,4 @@
-var api_url = "XXXXXX"; // API URL
+var api_url = "XXXXXX"; // Replace with your Just My Socks API URL
 var opts = { method: "GET" };
 
 // Try to get policy (node) information
